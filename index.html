@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="flex items-center gap-1 bg-gray-200 px-3 py-1 rounded-full">
-                    <span class="text-sm font-semibold">0</span>
+                    <span id="coin-count" class="text-sm font-semibold">100</span>
                     <img src="./assets/coin.png" class="w-4 h-4" alt="">
                 </div>
                 <button class="btn btn-success">Copy</button>
@@ -99,8 +99,8 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-1" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -127,8 +127,8 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-2" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -152,11 +152,11 @@
                 <p class="text-xs"><span class="badge badge-outline mt-2">Fire</span></p>
 
                 <div class="flex gap-2 mt-4">
-                    <button class="btn btn-outline btn-sm flex-1">
+                    <button  class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-3" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -183,8 +183,8 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-4" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -211,8 +211,8 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-5" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -239,8 +239,8 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-6" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -267,8 +267,8 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-7" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -296,8 +296,8 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-8" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
@@ -324,14 +324,15 @@
                     <button class="btn btn-outline btn-sm flex-1">
                         <i class="fa-solid fa-copy"></i>Copy
                     </button>
-                    <button class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
-                        <i class="fa-solid fa-phone"></i>Default</button>
+                    <button id="call-btn-9" class="btn text-white! bg-[#006747]! hover:bg-white! hover:text-black! btn-sm flex-1">
+                        <i class="fa-solid fa-phone"></i>Call</button>
                 </div>
             </div>
         </div>
         <!-- Emergency Hotline Section Ends -->
 
-        <div class="bg-white rounded-xl shadow-md p-4 flex flex-col">
+        <!-- Call History Section Starts -->
+        <div id="call-history" class="bg-white rounded-xl shadow-md p-4 flex flex-col">
             <div class="flex items-center justify-between mb-4">
                 <h2 class="text-lg font-semibold flex items-center gap-2">
                     <i class="fa-solid fa-clock"></i>
@@ -340,6 +341,7 @@
                 <button class="btn bg-[#006747]! text-white! text-sm! px-3! py-1! rounded-full!">Clear</button>
             </div>
         </div>
+        <!-- Call History Section Ends -->
     </section>
     <script src="./index.js"></script>
 </body>
