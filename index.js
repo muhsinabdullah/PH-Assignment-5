@@ -86,12 +86,20 @@ callButtonIds.forEach(function(id, index){
     <strong>${service.name}</strong> <br>
     <strong>${service.number}</strong>
     `
+    left.style.marginRight = '27px';
     const right = document.createElement('div');
     right.textContent= time;
+    right.style.textAlign = 'right';
 
     historyItem.appendChild(left);
     historyItem.appendChild(right);
 
     callHistoryContainer.appendChild(historyItem);
-    })
+    });
+});
+
+// Clear Call History
+const clearHistoryBtn = document.getElementById('clear-history-btn');
+clearHistoryBtn.addEventListener('click', function(){
+    callHistoryContainer.innerHTML = '';
 })
