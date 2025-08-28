@@ -102,4 +102,29 @@ callButtonIds.forEach(function(id, index){
 const clearHistoryBtn = document.getElementById('clear-history-btn');
 clearHistoryBtn.addEventListener('click', function(){
     callHistoryContainer.innerHTML = '';
-})
+});
+
+// Copy Button Functionality
+const copyCountEl = document.getElementById('copy-count');
+
+let copyCount = 0;
+
+function copyNumber(btnId, number){
+    const btn = document.getElementById(btnId);
+    btn.onclick = function(){
+        navigator.clipboard.writeText(number);
+        alert("Hotline Number" + number + "copied!")
+        copyCount++;
+        copyCountEl.textContent = copyCount;
+    }
+}
+
+copyNumber("copy-btn-1", "999");
+copyNumber("copy-btn-2", "999");
+copyNumber("copy-btn-3", "999");
+copyNumber("copy-btn-4", "1994-999999");
+copyNumber("copy-btn-5", "109");
+copyNumber("copy-btn-6", "106");
+copyNumber("copy-btn-7", "16216");
+copyNumber("copy-btn-8", "16445");
+copyNumber("copy-btn-9", "163");
