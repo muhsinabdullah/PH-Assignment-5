@@ -35,7 +35,7 @@
 
     <!-- Navbar Section Starts-->
     <div class="navbar bg-white shadow-sm px-6">
-        <div class="container mx-auto px-6 flex justify-between items-center">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
             <div class="flex items-center gap-2">
                 <img src="./assets/logo.png" class="w-8 h-8" alt="">
                 <span class="font-bold text-[#006747]">Emergency<br>Service</span>
@@ -51,7 +51,7 @@
                     <span id="coin-count" class="text-sm font-semibold">100</span>
                     <img src="./assets/coin.png" class="w-4 h-4" alt="">
                 </div>
-                <button id="navbar-copy-btn" class="btn btn-success"> <span id="copy-count">0</span> Copy</button>
+                <button id="navbar-copy-btn" class="btn bg-[#006747]! text-white! rounded-full!"> <span id="copy-count">0</span> Copy</button>
             </div>
         </div>
     </div>
@@ -62,8 +62,8 @@
 
         <div class="container mx-auto flex flex-col items-center text-center px-6">
             <img src="./assets/logo-dark.png" class="w-16 h-16 mb-4" alt="">
-            <h1 class="text-4xl md:text-3xl font-bold mb-2">Emergency Service Directory</h1>
-            <p class="text-xl md:text-sm max-w-2xl">
+            <h1 class="text-2xl sm:text-4xl md:text-3xl font-bold mb-2">Emergency Service Directory</h1>
+            <p class="text-sm md:text-sm sm:text-xl max-w-2xl">
                 Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of
                 Bangladesh
             </p>
@@ -73,7 +73,7 @@
 
 
     <!-- Emergency Hotline Section Starts-->
-    <section class="container mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-4 gap-6">
+    <section class="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-4 gap-4">
         <div class="lg:col-span-3 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="card bg-white shadow-md rounded-xl p-4 flex flex-col justify-between">
                 <div class="flex items-start justify-between">
